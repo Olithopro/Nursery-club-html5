@@ -1,0 +1,28 @@
+.image-clignote  {
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
+
+ body{
+    animation-duration: .2s;
+    animation-name: bg;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
+
+ @keyframes clignoter {
+   0%   { opacity:1; }
+   40%   {opacity:0; }
+   100% { opacity:1; }
+ }
+
+ @keyframes bg {
+   0%   { background:rgb(185, 16, 16); }
+   20%  { background:rgb(214, 8, 221); }
+   40%   { background:rgb(4, 19, 223); }
+   60%   { background:rgb(11, 206, 60); }
+   80%   { background:rgb(199, 202, 17); }
+   100% {  background:rgb(224, 115, 12); }
+ }

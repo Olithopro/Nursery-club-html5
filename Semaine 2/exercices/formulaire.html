@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head> <!-- partie invisible -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+    <style>
+        body {
+            width: 50%;
+            margin: auto;
+            border: 1px solid gray;
+            padding: 20px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1,
+        h3 {
+            background: white;
+            text-align: center;
+        }
+
+        label,
+        input,
+        select,
+        textarea {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body> <!-- corps de la page début du contenu qui sera affiché -->
+
+    <h1>Votre reservation d'hotel </h1> <!-- Titre de niveau 1 -->
+    <h3>* Champ obligatoire </h3> <!-- Titre de niveau 3 (plus petit) -->
+
+    <!-- début du formulaire -->
+    <form id="registration_form" method="POST">
+        <label for="fname"></label>
+        Votre nom* : <br>
+        <input type="text" id="fname" value="votre nom"><br>
+        <label for="fsurname"></label>
+        Votre Prenom* : <br>
+        <input type="text" id="fsurname" value="Votre prenom"><br>
+        <label for="fphone"></label>
+        votre numero de téléphone* : <br>
+        <input type="tel" id="fphone" value="0604443317"><br>
+        <label for="email"></label>
+        Votre email* : <br>
+        <input type="email" id="email" value="     @      .fr"><br>
+        <label for="ville">Selectionner une ville</label><br>
+        <select name="ville" id="Ville">
+            <option value="#">Choisir une ville</option>
+            <option value="Paris">Paris</option>
+            <option value="Lille">Lille</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Nante">Nante</option>
+            <option value="Nevers">Nevers</option>
+            <option value="Wonderland">Wonderland</option>
+            <option value="La pays imaginaire">Le pays imaginaire</option>
+            <option value="Rennes">Rennes</option>    
+        </select><br>
+        <label for="Date">Vous avez le choix dans la date :</label><br>
+        <input type="date" id="date" value=""><br>
+        <label for="Personne">Nombres de personnes :</label><br>
+        <input min="1" type="number" id="personne" value="Nombre de personne"><br>
+        <label for="Option">Vos options :</label><br>
+        Climatisation<input type="checkbox" id="option" value="Vos options">
+        Mini Bar<input type="checkbox">
+        Jacuzzi<input type="checkbox"><br>
+        <label for="Commentaire"></label>
+        <textarea name="message" id="commentaire" cols="30" rows="3" value="Entrez votre commentaire"></textarea><br>
+        <label for="radio">Accepter les CGU (condition generale de vente) </label><br>
+        J'accepte<input type="radio" name="fav" id="radio" value="">
+        Je refuse<input type="radio" name="fav" id="radio1" value=""><br>
+        <label for="Button"></label>
+        <button type="submit" name="submit">Envoyer ma demande</button> 
+        <input type="button" id="button" value="envoyer ma demande">
+
+    </form> <!--  fin du formulaire -->
+</body> <!-- fin du contenu de la page -->
+
+</html>
